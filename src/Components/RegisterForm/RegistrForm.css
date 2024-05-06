@@ -1,12 +1,12 @@
 *, *::after, *::before{
     box-sizing: border-box;
 }
-.form-wrapper{
+.form-wrapper1{
     background-color: none;
     width:400px;
     position: relative;
 }
-.title {
+.title1 {
     font-weight: bold;
     font-size:24px;
     text-align: center;
@@ -19,21 +19,21 @@
 }
 
 
-.form {
+.form1 {
     width: 100%;
-    border:2px solid #ccc;
     position: relative;
-    background-color: white;
+    background-color: none;
+    border:none;
     display: inline-left;
     flex-direction: column;
 
-    .name-surname{
+    .name-surname1{
         font-size: 16px;
         display: flex;
 
     }
     
-    .input{
+    .input1{
         width:100%;
         margin:0 auto;
         padding:12px  8px;
@@ -41,34 +41,35 @@
         border: none;
         outline: none; 
         box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
-        margin-top:15px;
+        margin-top:10px;
         display: flex;
         justify-content: space-between;
     }
-    .eye-icon{
+    .eye-icon1{
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: 15px;
         margin-bottom:20px;
     }
-    .flex{
+    .flex1{
         display: flex;
         justify-content: space-between;
         align-items: right;
         font-size:12px;
     }
 
-    .remember {
+    .remember1 {
         display: flex;
     }
-    .remember-me{
+    .remember-me1{
         display: inline-block;
-        margin-top:5px;
+        margin-top:20px;
+        margin-bottom: 20px;
         font-size: 10px;
     }
 
-    .password-field {
+    .password-field1 {
         width: 100%;
         position: relative;
 
@@ -83,13 +84,13 @@
 
     
     
-    .forgot{
+    .forgot1{
         font-size: 12px;       
         .forgot-password {
             display: inline-block;           
         } 
     }
-    .submit-in{
+    .submit-in1{
         font-size:16px;
         display: flex;
         width: 100%;
@@ -98,7 +99,7 @@
         border-radius:7px;        
         color:black;
 
-        .submit{
+        .submit1{
         width: 100%;
         background-color: black;
         color:white;
@@ -111,8 +112,9 @@
     
         }
 
-        .cancel{
+        .cancel1{
         color:black;
+        background-color: white;
         width: 100%;
         border:none;
         padding-top:10px;
@@ -120,11 +122,13 @@
         border-radius:7px;
         font-size:16px;
         font-weight:bold;
+        width:200px;
+        margin-right:20px;
         }
     }
     
     
-    .registration{
+    .registration1{
         text-align: center;
         justify-content: space-between;
         display: flex;
