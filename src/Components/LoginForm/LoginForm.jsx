@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./LoginForm.css";
 // import { FcGoogle } from "react-icons/fc";
-
 const LoginForm = () => {
     const [showPassword, setShowPassword] = useState(false);
 
@@ -17,7 +16,7 @@ const LoginForm = () => {
                 <input type="text" className="input" placeholder="Введите вашу эл. почту" />
                 <div className="password-field">
                     <input type={showPassword ? 'text' : 'password'} className="input" placeholder="*********" />
-                    <span onClick={togglePasswordVisibility} style={{ cursor: 'pointer' }} role="img" aria-label="eye" className="eye-icon">👁️</span>
+                    <span onClick={togglePasswordVisibility} style={{ cursor: 'pointer' }} role="img" aria-label="eye" className="eye-icon"><img src="./eye.png" alt="" /></span>
                 </div>
                 <div className="flex">
                     <div>
@@ -33,7 +32,7 @@ const LoginForm = () => {
                 <button className="submit-in">Войти</button>
                 <div className="divider">
                     <hr />
-                    <p>войти через</p>
+                    <p>Войти через</p>
                     <hr />
                 </div>
                 <button className="submit-google">
@@ -41,18 +40,16 @@ const LoginForm = () => {
                     <img src="./googleicon.png" alt="google-icon" className="google-icon" />
                 </button>
                 <div className="registration">
-                    <a href="" className="registration-1">
-                        <p>Нет аккаунта?</p>
-                    </a>
-                    <a href="" className="registration-2">
-                        <p>Зарегистрироваться</p>
-                    </a>
+                    <a href="" className="registration-1"><p>Нет аккаунта?</p></a>
+                    <a href="" className="registration-2"><p>Зарегистрироваться</p></a>
                 </div>
-                <img src="./vkontakte.png" alt=""width={15}height={15} />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <div className="images-container">
+                <img src="./vkontakte1.png" alt=""width={20}height={20} />
+                <img src="./facebook1.png" alt=""width={20}height={20} />
+                <img src="./twitter1.png" alt=""width={20}height={20} />
+                <img src="./google1.png" alt=""width={20}height={20}/>
+                <img src="./insta1.png" alt=""width={20}height={20} />
+                </div>
             </div>
         </div>
     )

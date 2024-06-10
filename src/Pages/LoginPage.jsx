@@ -5,12 +5,12 @@ import "./LoginPage.css"
 const LoginPage = () => {
     
     return (
-        <div className='body'>
+        <div className="login-page">
             <Navbar/>
-            <div className='login-page-hero'>
+            <div className="login-page-hero">
                 <img src="./rain-bow.png" alt="rainbow" className="img-1" />
-                <div className='img'><img src="./Hand.png" alt="Hand" width={'860px'} height={'530px'}/></div>
-                <div className='login'><LoginForm/></div>
+                <div className="img-hand"><img src="./Hand.png" alt="Hand"/></div>
+                <div className="login"><LoginForm/></div>
 
             </div>                              
         </div>

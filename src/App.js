@@ -7,11 +7,35 @@ import RegistrPage from './Pages/RegistrPage';
 import ContactPage from './Pages/ContactPage';
 import Faq from './Components/FAQ/Faq';
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+  {
+    path: "/Login",
+    element: <LoginPage/>
+  },
+  {
+    path:"/Register",
+    element: <RegistrPage/>
+  }
+]);
+
+
 function App() {
   return (
     <div>
-      <Faq/>
+      {/* <LoginPage/> */}
+      <RouterProvider router={router} />
+
     </div>
+    
   );
 }
 
